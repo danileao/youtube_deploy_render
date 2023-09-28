@@ -1,4 +1,4 @@
-package br.com.danieleleaoe.deploy_ghactions;
+package br.com.danieleleaoe.deploy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

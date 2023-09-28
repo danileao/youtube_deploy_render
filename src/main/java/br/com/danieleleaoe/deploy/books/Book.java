@@ -1,4 +1,4 @@
-package br.com.danieleleaoe.deploy_ghactions.books;
+package br.com.danieleleaoe.deploy.books;
 
 import java.util.UUID;
 
@@ -15,7 +15,7 @@ import jakarta.persistence.Id;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Book {
-    
+
     @Id
     @GeneratedValue(generator = "UUID")
     private UUID id;

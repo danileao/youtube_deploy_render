@@ -1,4 +1,4 @@
-package br.com.danieleleaoe.deploy_ghactions.books;
+package br.com.danieleleaoe.deploy.books;
 
 import java.util.List;
 
@@ -12,18 +12,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/books")
 public class BooksController {
-    
+
     @Autowired
     private BooksRepository booksRepository;
 
     @GetMapping("/")
     public List<Book> list() {
-        return this.booksRepository.findAll();   
+        return this.booksRepository.findAll();
     }
 
     @PostMapping("/")
     public Book create(@RequestBody Book book) {
-        return this.booksRepository.save(book);    }
-
+        return this.booksRepository.save(book);
+    }
 
 }
